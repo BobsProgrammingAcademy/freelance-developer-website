@@ -9,7 +9,7 @@ This is a freelance developer portfolio website built using **Django 4**, **Reac
 Install the following prerequisites:
 
 1. [Python 3.10.4 or higher](https://www.python.org/downloads/)
-2. [Node.js v18.0.0 or higher](https://nodejs.org/en/)
+2. [Node.js 18.0.0 or higher](https://nodejs.org/en/)
 3. [Visual Studio Code](https://code.visualstudio.com/download)
 
 
