@@ -63,7 +63,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-#### 7. Create an admin user to access the Django Admin interface
+#### 5. Create an admin user to access the Django Admin interface
 
 From the **backend** directory run:
 
