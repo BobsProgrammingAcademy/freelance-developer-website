@@ -4,6 +4,15 @@ This is a freelance developer portfolio website built using **Django 4**, **Reac
 
 ![plot](https://github.com/BobsProgrammingAcademy/Freelance-Developer-Website/blob/master/frontend/src/assets/images/large.png?raw=true)
 
+
+## Table of Contents 
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the application](#run-the-application)
+- [Adding data to the application](#add-data-to-the-application)
+- [Customizing the application](#customize-the-application)
+
+
 ## Prerequisites
 
 Install the following prerequisites:
