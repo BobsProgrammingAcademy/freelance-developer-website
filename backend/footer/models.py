@@ -9,10 +9,10 @@ class Footer(models.Model):
   image_author_link = models.CharField(max_length=250, null=True, blank=True)
   image_website_name = models.CharField(max_length=100, null=True, blank=True)
   image_website_link = models.CharField(max_length=250, null=True, blank=True)
-  
+
   class Meta:
     verbose_name = 'Footer'
     verbose_name_plural = 'Footer'
-    
+
   def __str__(self):
     return self.copyright

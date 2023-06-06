@@ -26,7 +26,7 @@ INSTALLED_APPS = [
   'django.contrib.sessions',
   'django.contrib.messages',
   'django.contrib.staticfiles',
-  
+
   # 3rd party
   'rest_framework',
   'corsheaders',
@@ -137,4 +137,4 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 
-FILE_UPLOAD_PERMISSIONS=0o640
+FILE_UPLOAD_PERMISSIONS = 0o640

@@ -10,7 +10,7 @@ class TagSerializer(serializers.ModelSerializer):
 
 class ProjectSerializer(serializers.ModelSerializer):
   tags = TagSerializer(many=True)
-  
+
   class Meta:
     model = Project
     fields = ('name', 'description', 'link', 'image', 'tags')
