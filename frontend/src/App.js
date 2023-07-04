@@ -1,18 +1,18 @@
-import React, { useState, useMemo } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelmetProvider, Helmet } from "react-helmet-async";
+import React, { useState, useMemo } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from "@mui/material/CssBaseline";
-import "aos/dist/aos.css";
+import CssBaseline from '@mui/material/CssBaseline';
+import 'aos/dist/aos.css';
 
-import theme from "./theme/theme";
-import Layout from "./layout/Layout";
-import Home from "./pages/Home";
+import theme from './theme/theme';
+import Layout from './layout/Layout';
+import Home from './pages/Home';
 
-const App = () => {  
+const App = () => {
   return (
     <HelmetProvider>
-      <Helmet 
+      <Helmet
         titleTemplate="%s | Bob's Programming Academy"
         defaultTitle="Bob's Programming Academy"
       />

@@ -1,68 +1,69 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import Avatar from "@mui/material/Avatar";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import Divider from "@mui/material/Divider";
-import Grid from "@mui/material/Grid";
-import ListItem from "@mui/material/ListItem";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import ListItemText from "@mui/material/ListItemText";
-import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material/styles";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
+import ListItem from '@mui/material/ListItem';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import ListItemText from '@mui/material/ListItemText';
+import Typography from '@mui/material/Typography';
+import { useTheme } from '@mui/material/styles';
 
 // Font Awesome Icons
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add(faCommentDots);
 
 const Testimonials = () => {
   const theme = useTheme();
   const [testimonials, setTestimonials] = useState([]);
-  
+
   const fetchTestimonials = () => {
-    axios.get("http://127.0.0.1:8000/testimonials", {
-      headers: {
-        "Accept": "application/json"
-      }
-    })
-    .then(response => {
-      setTestimonials(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get('http://127.0.0.1:8000/testimonials', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then((response) => {
+        setTestimonials(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchTestimonials();
   }, []);
-  
+
   return (
-    <div id="testimonials">
+    <div id='testimonials'>
       <Box
         maxWidth={{ sm: 720, md: 1236 }}
         width={1}
-        margin="0 auto"
+        margin='0 auto'
         paddingX={2}
         paddingY={{ xs: 4, sm: 6, md: 8 }}
       >
         <Box>
           <Box marginBottom={4}>
             <Typography
-              variant="h2"
-              align="center"
+              variant='h2'
+              align='center'
               fontWeight={700}
-              marginTop="-30px"
-              data-aos="fade-up"
+              marginTop='-30px'
+              data-aos='fade-up'
               gutterBottom
             >
               Testimonials
             </Typography>
             <Typography
-              variant="h4"
+              variant='h4'
               color={theme.palette.text.secondary}
-              align="center"
-              data-aos="fade-up"
+              align='center'
+              data-aos='fade-up'
               marginTop={4}
               marginBottom={6}
             >
@@ -73,14 +74,14 @@ const Testimonials = () => {
             {testimonials.map((item, i) => (
               <Grid item xs={12} sm={6} md={4} key={i}>
                 <Box
-                  display="block"
+                  display='block'
                   width={1}
                   height={1}
                   sx={{
-                    textDecoration: "none",
-                    transition: "all .2s ease-in-out",
-                    "&:hover": {
-                      transform: "translateY(-4px)",
+                    textDecoration: 'none',
+                    transition: 'all .2s ease-in-out',
+                    '&:hover': {
+                      transform: 'translateY(-4px)',
                     },
                   }}
                 >
@@ -90,24 +91,21 @@ const Testimonials = () => {
                     borderRadius={2}
                     width={1}
                     height={1}
-                    data-aos="fade-up"
+                    data-aos='fade-up'
                     data-aos-delay={i * 100}
                     data-aos-offset={100}
                     data-aos-duration={600}
-                    variant="outlined"
+                    variant='outlined'
                   >
-                    <Box 
-                      display="flex" 
-                      flexDirection="column"
-                    >
+                    <Box display='flex' flexDirection='column'>
                       <Box marginBottom={2}>
-                        <FontAwesomeIcon 
-                          icon={faCommentDots} 
-                          style={{ 
+                        <FontAwesomeIcon
+                          icon={faCommentDots}
+                          style={{
                             color: theme.palette.primary.main,
-                            height: 45, 
-                            width: 45
-                          }} 
+                            height: 45,
+                            width: 45,
+                          }}
                         />
                       </Box>
                       <Typography
@@ -116,7 +114,11 @@ const Testimonials = () => {
                       >
                         {item.testimonial}
                       </Typography>
-                      <ListItem component="div" disableGutters sx={{ padding: 0, marginTop: 1 }}>
+                      <ListItem
+                        component='div'
+                        disableGutters
+                        sx={{ padding: 0, marginTop: 1 }}
+                      >
                         <ListItemAvatar>
                           <Avatar src={item.author_photo} />
                         </ListItemAvatar>
