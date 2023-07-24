@@ -157,7 +157,7 @@ const Projects = () => {
                             '&:hover': {
                               backgroundColor: 'transparent',
                               color: theme.palette.primary.main,
-                              border: '1px solid ' + theme.palette.primary.main,
+                              border: `1px solid ${theme.palette.primary.main}`,
                             },
                           }}
                         />
