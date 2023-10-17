@@ -1,6 +1,6 @@
 # Freelance Developer Portfolio Website
 
-This is a freelance developer portfolio website built using **Django 4**, **Django REST Framework 3**, **React 18** and **Material UI 5**.
+This is a freelance developer portfolio website built using **Django 4**, **Django REST Framework 3**, **React 18**, and **Material UI 5**.
 
 ![plot](https://github.com/BobsProgrammingAcademy/Freelance-Developer-Website/blob/master/frontend/src/assets/images/large.png?raw=true)
 
