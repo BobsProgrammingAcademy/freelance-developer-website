@@ -1,6 +1,6 @@
 # Freelance Developer Portfolio Website
 
-This is a freelance developer portfolio website built using **Django 4**, **Django REST Framework 3**, **React 18**, and **Material UI 5**.
+This freelance developer portfolio website is built using **Django 4**, **Django REST Framework 3**, **React 18**, and **Material UI 5**.
 
 ![plot](https://github.com/BobsProgrammingAcademy/Freelance-Developer-Website/blob/master/frontend/src/assets/images/large.png?raw=true)
 
@@ -30,7 +30,7 @@ Install the following prerequisites:
 
 #### 1. Create a virtual environment
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 cd backend
@@ -41,7 +41,7 @@ python -m venv venv
 
 #### 2. Activate the virtual environment
 
-From the **backend** directory run:
+From the **backend** directory, run:
 
 On macOS:
 
@@ -57,7 +57,7 @@ venv\scripts\activate
 
 #### 3. Install required backend dependencies
 
-From the **backend** directory run:
+From the **backend** directory, run:
 
 ```bash
 pip install -r requirements.txt
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 
 #### 4. Run migrations
 
-From the **backend** directory run:
+From the **backend** directory, run:
 
 ```bash
 python manage.py makemigrations
@@ -76,7 +76,7 @@ python manage.py migrate
 
 #### 5. Create an admin user to access the Django Admin interface
 
-From the **backend** directory run:
+From the **backend** directory, run:
 
 ```bash
 python manage.py createsuperuser
@@ -88,7 +88,7 @@ When prompted, enter a username, email, and password.
 
 #### 1. Install required frontend dependencies
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 cd frontend
@@ -103,7 +103,7 @@ To run the application, you need to have both the backend and the frontend up an
 
 #### 1. Run backend
 
-From the **backend** directory run:
+From the **backend** directory, run:
 
 ```bash
 python manage.py runserver
@@ -111,7 +111,7 @@ python manage.py runserver
 
 #### 2. Run frontend
 
-From the **frontend** directory run:
+From the **frontend** directory, run:
 
 ```bash
 npm start
