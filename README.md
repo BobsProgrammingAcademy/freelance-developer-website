@@ -9,6 +9,7 @@ This is a freelance developer portfolio website built using **Django 4**, **Djan
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the application](#run-the-application)
+- [Running the tests](#run-the-tests)
 - [Adding data to the application](#add-data-to-the-application)
 - [Customizing the application](#customize-the-application)
 - [Copyright and License](#copyright-and-license)
@@ -97,6 +98,7 @@ cd frontend
 npm install
 ```
 
+
 ### Run the application
 
 To run the application, you need to have both the backend and the frontend up and running.
@@ -120,6 +122,18 @@ npm start
 #### 3. View the application
 
 Go to http://localhost:3000/ to view the application.
+
+
+### Run the tests
+
+#### 1. Run the backend tests
+
+From the **backend** directory, run:
+
+```bash
+python manage.py test --pattern="tests.py"
+
+```
 
 
 ### Add data to the application
