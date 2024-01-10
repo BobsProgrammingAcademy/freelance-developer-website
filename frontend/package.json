@@ -2,6 +2,8 @@
   "name": "freelance-developer-website",
   "version": "1.0.0",
   "description": "Freelance Developer Website",
+  "author": "MG",
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -9,10 +11,16 @@
     "eject": "react-scripts eject",
     "prettier": "prettier \"**/*.+(json|js|jsx)\"",
     "format:check": "npm run prettier -- --check",
-    "format:fix": "npm run prettier -- --write"
+    "format:fix": "npm run prettier -- --write",
+    "lint": "eslint --ext .js,.jsx ./src --no-error-on-unmatched-pattern",
+    "lint:fix": "eslint --ext .js,.jsx ./src --no-error-on-unmatched-pattern --fix"
   },
-  "author": "MG",
-  "license": "MIT",
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "npm run lint",
+      "npm run format:check"
+    ]
+  },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
