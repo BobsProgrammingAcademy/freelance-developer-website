@@ -15,9 +15,7 @@ module.exports = {
     // Handle CSS imports (without CSS modules)
     '\\.(css|less)$': '<rootDir>/src/tests/mocks/fileMock.css',
 
-    // Handle charts
-    'react-chartjs-2': '<rootDir>/src/tests/mocks/chartsMock.js',
-    'chart.js': '<rootDir>/src/tests/mocks/chartsMock.js',
-    'chartjs-plugin-datalabels': '<rootDir>/src/tests/mocks/chartsMock.js',
+    // Handle Leaflet maps
+    'react-leaflet': '<rootDir>/src/tests/mocks//reactLeafletMock.js',
   },
 };
