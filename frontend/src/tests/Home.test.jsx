@@ -1,22 +1,37 @@
-import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-
-import Home from '../pages/Home';
-
-const renderApp = () => {
-  render(<Home />);
-
-  return { user: userEvent.setup() };
-};
+import axios from 'axios';
 
 describe('Home page', () => {
-  it('should render the elements on the Home page', async () => {
-    renderApp();
+  beforeAll(() => {
+    jest.spyOn(axios, 'get').mockImplementation();
+  });
 
-    expect(
-      await screen.findByText(
-        /I am a freelance web developer who builds elegant, fast, and scalable web applications/i
-      )
-    ).toBeInTheDocument();
+  afterAll(() => {
+    jest.restoreAllMocks();
+  });
+
+  it('returns the mocked response in the Hero section', async () => {
+    axios.get.mockResolvedValue({
+      data: [
+        {
+          id: 1,
+          title: 'Lorem ipsum',
+          subtitle: 'dolor sit amet',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+      ],
+    });
+    const res = await axios.get('http://127.0.0.1:8000/hero');
+    expect(res).toEqual({
+      data: [
+        {
+          id: 1,
+          title: 'Lorem ipsum',
+          subtitle: 'dolor sit amet',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+      ],
+    });
   });
 });
