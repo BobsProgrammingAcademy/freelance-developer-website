@@ -127,7 +127,7 @@ const Hero = () => {
             </Grid>
           </Grid>
         ))}
-        <Divider sx={{ mt: 6 }} />
+        <Divider sx={{ marginTop: 6 }} />
       </Box>
     </div>
   );
