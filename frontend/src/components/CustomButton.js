@@ -17,7 +17,7 @@ const CustomButton = ({ href, icon, text }) => {
         fontSize: theme.typography.h4,
         fontWeight: '600',
         textTransform: 'none',
-        mr: 2,
+        marginRight: 2,
         '&:active': {
           color: theme.palette.primary.main,
         },
@@ -25,7 +25,7 @@ const CustomButton = ({ href, icon, text }) => {
           color: theme.palette.primary.main,
         },
         '& svg': {
-          mr: 0.5,
+          marginRight: 0.5,
         },
       }}
     >
