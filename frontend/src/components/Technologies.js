@@ -24,7 +24,7 @@ const Technologies = () => {
       .then((response) => {
         setTechnologies(response.data);
       })
-      .catch((err) => console.log(err));
+      .catch((error) => console.log(error));
   };
 
   useEffect(() => {
