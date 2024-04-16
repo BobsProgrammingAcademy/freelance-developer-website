@@ -53,8 +53,8 @@ const Contact = () => {
               align='center'
               fontWeight={700}
               marginTop={theme.spacing(1)}
-              data-aos='fade-up'
               gutterBottom
+              data-aos='fade-up'
             >
               Get in touch
             </Typography>
@@ -62,9 +62,9 @@ const Contact = () => {
               variant='h6'
               align='center'
               color={theme.palette.text.secondary}
-              data-aos='fade-up'
               marginTop={4}
               marginBottom={6}
+              data-aos='fade-up'
             >
               Do you need a full-stack web developer? I would love to hear from
               you.
@@ -76,9 +76,9 @@ const Contact = () => {
                 <Box marginTop={3} marginBottom={2} justifyContent='center'>
                   <Typography
                     variant='h4'
-                    sx={{ fontWeight: 600 }}
-                    gutterBottom
                     alignItems='center'
+                    gutterBottom
+                    sx={{ fontWeight: 600 }}
                   >
                     Contact details
                   </Typography>
@@ -90,11 +90,11 @@ const Contact = () => {
                 >
                   <Box
                     component={ListItem}
-                    disableGutters
                     width='auto'
                     padding={0}
                     marginRight={10}
                     marginBottom={3}
+                    disableGutters
                   >
                     <Box
                       component={ListItemAvatar}
@@ -115,11 +115,11 @@ const Contact = () => {
                   </Box>
                   <Box
                     component={ListItem}
-                    disableGutters
                     width='auto'
                     padding={0}
                     marginRight={10}
                     marginBottom={3}
+                    disableGutters
                   >
                     <Box
                       component={ListItemAvatar}
@@ -140,10 +140,10 @@ const Contact = () => {
                   </Box>
                   <Box
                     component={ListItem}
-                    disableGutters
                     width='auto'
                     padding={0}
                     marginBottom={3}
+                    disableGutters
                   >
                     <Box
                       component={ListItemAvatar}
