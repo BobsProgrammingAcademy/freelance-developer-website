@@ -46,19 +46,19 @@ const Technologies = () => {
               variant='h2'
               align='center'
               fontWeight={700}
-              marginTop={theme.spacing(1)}
-              data-aos='fade-up'
+              marginTop={theme.spacing(1)}              
               gutterBottom
+              data-aos='fade-up'
             >
               Technologies
             </Typography>
             <Typography
               variant='h4'
               align='center'
-              color={theme.palette.text.secondary}
-              data-aos='fade-up'
+              color={theme.palette.text.secondary}   
               marginTop={4}
               marginBottom={6}
+              data-aos='fade-up'
             >
               Technologies I use to build web applications
             </Typography>
@@ -69,10 +69,6 @@ const Technologies = () => {
                 <Box
                   width={1}
                   height={1}
-                  data-aos='fade-up'
-                  data-aos-delay={100}
-                  data-aos-offset={100}
-                  data-aos-duration={600}
                   component={Card}
                   display='flex'
                   flexDirection='column'
@@ -80,6 +76,10 @@ const Technologies = () => {
                   boxShadow={0}
                   variant='outlined'
                   borderRadius={2}
+                  data-aos='fade-up'
+                  data-aos-delay={100}
+                  data-aos-offset={100}
+                  data-aos-duration={600}
                 >
                   <CardContent
                     sx={{
