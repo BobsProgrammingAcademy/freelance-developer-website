@@ -47,19 +47,19 @@ const Projects = () => {
             variant='h2'
             align='center'
             fontWeight={700}
-            marginTop={theme.spacing(1)}
-            data-aos='fade-up'
+            marginTop={theme.spacing(1)}         
             gutterBottom
+            data-aos='fade-up'
           >
             Projects
           </Typography>
           <Typography
             variant='h5'
             color={theme.palette.text.secondary}
-            align='center'
-            data-aos='fade-up'
+            align='center'         
             marginTop={4}
             marginBottom={6}
+            data-aos='fade-up'
           >
             View some of my latest projects
           </Typography>
