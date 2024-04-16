@@ -53,19 +53,19 @@ const Testimonials = () => {
               variant='h2'
               align='center'
               fontWeight={700}
-              marginTop='-30px'
-              data-aos='fade-up'
+              marginTop='-30px'      
               gutterBottom
+              data-aos='fade-up'
             >
               Testimonials
             </Typography>
             <Typography
               variant='h4'
               color={theme.palette.text.secondary}
-              align='center'
-              data-aos='fade-up'
+              align='center'             
               marginTop={4}
               marginBottom={6}
+              data-aos='fade-up'
             >
               Check what clients have said about my work
             </Typography>
@@ -87,6 +87,7 @@ const Testimonials = () => {
                 >
                   <Box
                     component={Card}
+                    variant='outlined'
                     padding={4}
                     borderRadius={2}
                     width={1}
@@ -95,7 +96,6 @@ const Testimonials = () => {
                     data-aos-delay={i * 100}
                     data-aos-offset={100}
                     data-aos-duration={600}
-                    variant='outlined'
                   >
                     <Box display='flex' flexDirection='column'>
                       <Box marginBottom={2}>
@@ -109,8 +109,8 @@ const Testimonials = () => {
                         />
                       </Box>
                       <Typography
-                        gutterBottom
                         color={theme.palette.text.secondary}
+                        gutterBottom
                       >
                         {item.testimonial}
                       </Typography>
