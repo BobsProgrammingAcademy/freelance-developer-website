@@ -46,8 +46,8 @@ const About = () => {
               align='center'
               fontWeight={700}
               marginTop='-30px'
-              data-aos='fade-up'
               gutterBottom
+              data-aos='fade-up'
             >
               About
             </Typography>
@@ -55,9 +55,9 @@ const About = () => {
               variant='h5'
               color={theme.palette.text.secondary}
               align='center'
-              data-aos='fade-up'
               marginTop={4}
               marginBottom={6}
+              data-aos='fade-up'
             >
               I am a freelance web developer who builds elegant, fast, and
               scalable web applications
@@ -80,6 +80,7 @@ const About = () => {
                 >
                   <Box
                     component={Card}
+                    variant='outlined'
                     padding={4}
                     borderRadius={2}
                     width={1}
@@ -88,7 +89,7 @@ const About = () => {
                     data-aos-delay={i * 100}
                     data-aos-offset={100}
                     data-aos-duration={600}
-                    variant='outlined'
+                    
                   >
                     <Box display='flex' flexDirection='column'>
                       <Box
