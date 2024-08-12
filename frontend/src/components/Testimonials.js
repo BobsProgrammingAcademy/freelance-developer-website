@@ -93,7 +93,7 @@ const Testimonials = () => {
                     width={1}
                     height={1}
                     data-aos='fade-up'
-                    data-aos-delay={i * 100}
+                    data-aos-delay={100}
                     data-aos-offset={100}
                     data-aos-duration={600}
                   >
