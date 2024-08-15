@@ -34,7 +34,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <Box
         backgroundColor={theme.palette.background.default}
         paddingTop='1px'
@@ -146,7 +146,7 @@ const Footer = () => {
           ))}
         </Box>
       </Box>
-    </React.Fragment>
+    </>
   );
 };
 
