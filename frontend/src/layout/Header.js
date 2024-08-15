@@ -30,7 +30,7 @@ const Header = ({ onSidebarOpen }) => {
   });
 
   return (
-    <React.Fragment>
+    <>
       <AppBar
         position='sticky'
         elevation={trigger ? 1 : 0}
@@ -135,7 +135,7 @@ const Header = ({ onSidebarOpen }) => {
           </Box>
         </Toolbar>
       </AppBar>
-    </React.Fragment>
+    </>
   );
 };
 
