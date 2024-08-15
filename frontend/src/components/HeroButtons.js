@@ -13,7 +13,7 @@ const HeroButtons = () => {
   });
 
   return (
-    <React.Fragment>
+    <>
       <Box
         display='flex'
         flexDirection={{ xs: 'column', sm: 'row' }}
@@ -69,7 +69,7 @@ const HeroButtons = () => {
           </Button>
         </Box>
       </Box>
-    </React.Fragment>
+    </>
   );
 };
 
