@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTheme } from '@mui/material/styles';
 import { MapContainer, Circle, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
