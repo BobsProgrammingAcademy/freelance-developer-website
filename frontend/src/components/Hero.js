@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
-import AOS from 'aos';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import AOS from 'aos';
+import axios from 'axios';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
