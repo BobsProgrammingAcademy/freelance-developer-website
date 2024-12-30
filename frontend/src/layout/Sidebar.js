@@ -6,17 +6,19 @@ import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
+
+// Material Icons
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-
-import CustomButton from '../components/CustomButton';
 
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add(faLaptopCode);
+
+import CustomButton from '../components/CustomButton';
 
 const Sidebar = ({ open, onClose }) => {
   const theme = useTheme();
