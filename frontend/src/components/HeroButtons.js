@@ -1,7 +1,10 @@
+// Material UI
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+
+// Material Icons
 import HelpIcon from '@mui/icons-material/HelpOutlineOutlined';
 import ManageSearchIcon from '@mui/icons-material/ManageSearchOutlined';
 
