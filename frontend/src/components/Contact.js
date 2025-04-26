@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+
+// Material UI
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -7,10 +9,12 @@ import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
+import { useTheme } from '@mui/material/styles';
+
+// Material Icons
 import EmailIcon from '@mui/icons-material/Email';
 import LocationIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
-import { useTheme } from '@mui/material/styles';
 
 import Map from './Map';
 
