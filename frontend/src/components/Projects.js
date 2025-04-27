@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import axios from 'axios';
+
+// Material UI
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
